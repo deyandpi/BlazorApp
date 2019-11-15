@@ -1,0 +1,56 @@
+﻿@page "/events"
+
+@using BlazerTest1.Data;
+
+@inject DbData.Model.LocalDBContext _db
+@inject EventsService EventsService
+
+<h1>Events</h1>
+
+@if (events == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+        <table id="table" class="table">
+            <thead>
+                <tr>
+                    <th>Име</th>
+                    <th>Дата</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ev in events)
+                {
+                <tr>
+                    <td>@ev.Name</td>
+                    <td>@ev.Date <input type="text" placeholder="Date" @bind="@ev.Date" /></td>
+
+                    <td><button type="button" @onclick="@(() => AddDate(ev))">Add 1 Day</button></td>
+                    <td><button type="button" @onclick="@(() => Save(ev))">Add 1 Day</button></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+}
+
+@code {
+    String text;
+    List<EventDb> events;
+
+    protected override async Task OnInitializedAsync()
+    {
+        events = await EventsService.GetEvents(_db);
+    }
+
+    public void AddDate(EventDb ev)
+    {
+        ev.Date = ev.Date.AddDays(1);
+    }
+
+    public void Save(EventDb ev)
+    {
+        EventsService.Save(ev);
+    }
+}

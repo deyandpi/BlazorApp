@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazerTest1", "BlazerTest1.csproj", "{B96049FF-8D9F-4310-9E6A-857E4935EDD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbData", "..\Data\DbData.csproj", "{5A65FE27-D0A2-47F6-B4B1-DCAAE048DB57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B96049FF-8D9F-4310-9E6A-857E4935EDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96049FF-8D9F-4310-9E6A-857E4935EDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96049FF-8D9F-4310-9E6A-857E4935EDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96049FF-8D9F-4310-9E6A-857E4935EDD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A65FE27-D0A2-47F6-B4B1-DCAAE048DB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A65FE27-D0A2-47F6-B4B1-DCAAE048DB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A65FE27-D0A2-47F6-B4B1-DCAAE048DB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A65FE27-D0A2-47F6-B4B1-DCAAE048DB57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7149B394-30F4-48EB-B8B0-025FA6540B40}
+	EndGlobalSection
+EndGlobal
